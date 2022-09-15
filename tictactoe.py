@@ -52,7 +52,7 @@ def get_input():
         if inp not in [str(i+1) for i in range(9)]:
             print('[ERROR] Should be number from 1-9!\n')
         elif int(inp) < 1 or int(inp) > 9:
-            print('[ERROR] Harus angka 1-9!\n')
+            print('[ERROR] Should be number from 1-9!\n')
         elif table[int(inp)-1] != ' ':
             print(f'[ERROR] Box {inp} is not empty!\n')
         else:
