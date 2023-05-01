@@ -1,3 +1,5 @@
+import os
+
 table = [' ' for i in range(9)]
 player = 'X'
 is_not_game_over = True
@@ -65,6 +67,7 @@ if __name__ == '__main__':
     print_table()
     while is_not_game_over:
         get_input()
+        os.system('clear' if os.name == 'posix' else 'cls')
         print_table()
         check_table()
     print('\n               [ GAME OVER ]\n')
